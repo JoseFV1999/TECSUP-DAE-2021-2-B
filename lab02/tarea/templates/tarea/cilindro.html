@@ -1,0 +1,9 @@
+<h2>{{ titulo }}</h2>
+<form action="{% url 'tarea:cilindro' %}" method="post">
+    {% csrf_token %}
+    Introduzca el diametro en metros:
+    <input type="text" name="diametro"><br>
+    Introduzca la altura en metros:
+    <input type="text" name="altura"><br>
+    <input type="submit" name="submit" value="Calcular">
+</form>
