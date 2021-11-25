@@ -108,7 +108,6 @@ class App extends Component {
         console.log(error.toString());
       });
     }else{
-      //nuevo registro
       axios.post('https://cesarapi.herokuapp.com/series/',datos)
       .then(res => {
         this.state.series.push(res.data);
